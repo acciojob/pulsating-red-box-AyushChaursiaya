@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulsating Box</title>
   <style>
     body {
       display: flex;
@@ -12,7 +13,7 @@
       margin: 0;
     }
 
-    .pulsating-box {
+    .pulse-box {
       width: 100px;
       height: 100px;
       background-color: red;
@@ -20,23 +21,16 @@
     }
 
     @keyframes pulse {
-      0% {
+      0%, 100% {
         transform: scale(1);
       }
       50% {
         transform: scale(1.2);
       }
-      100% {
-        transform: scale(1);
-      }
     }
   </style>
-  <title>Pulsating Red Box</title>
 </head>
 <body>
-  <div class="pulsating-box"></div>
-
-  <!-- Your JavaScript code (if any) can go here -->
-
+  <div class="pulse-box"></div>
 </body>
 </html>
